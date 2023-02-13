@@ -22,9 +22,19 @@ const useStyles = makeStyles()({
         border: '2px solid #414141',
         borderRadius: theme.shape.borderRadius,
         padding: theme.spacing(1),
-        width: '85vw',
         margin: '.5em 1em',
+        width: '42vw',
+        [theme.breakpoints.down('xl')]: {
+            width: '62vw',
+        },
+        [theme.breakpoints.down(821)]: {
+            width: '85vw',
+        },
+        [theme.breakpoints.down(400)]: {
+            width: '82vw',
+        },
     },
+    
     hover: {
         borderColor: '#414141',
     }
